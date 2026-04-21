@@ -1,57 +1,57 @@
 [
-{
+  {
     "name": "Desarrollo web",
-    "category": "development",
-    "img": "./certificates/Fundamentes-desarrollo-web.jpeg"
-},
-{
+    "category": "Development",
+    "img": "../data/certificates/Fundamentos-desarrollo-web.jpeg"
+  },
+  {
     "name": "Desarrollo web profesional",
-    "category": "development",
-    "img": "./certificates/Desarrollo-web-profesional-jpeg"
-},
-{
+    "category": "Development",
+    "img": "../data/certificates/Desarrollo-web-profesional.jpeg"
+  },
+  {
     "name": "React",
-    "category": "development",
-    "img": "./certificates/React.png"
-},
-{
+    "category": "Development",
+    "img": "../data/certificates/React.png"
+  },
+  {
     "name": "Node.js",
-    "category": "development",
-    "img": "./certificates/Node.png"
-},
-{
+    "category": "Development",
+    "img": "../data/certificates/Node.png"
+  },
+  {
     "name": "Bootstrap",
-    "category": "development",
-    "img": "./certificates/Bootstrap.png"
-},
-{
+    "category": "Development",
+    "img": "../data/certificates/Bootstrap.png"
+  },
+  {
     "name": "Git y Github",
-    "category": "development",
-    "img": "./certificates/Git-y-GitHub.png"
-},
-{
+    "category": "Development",
+    "img": "../data/certificates/Git-y-GitHub.png"
+  },
+  {
     "name": "API Rest",
-    "category": "development",
-    "img": "./certificates/API-Rest.png"
-},
-{
+    "category": "Development",
+    "img": "../data/certificates/API-Rest.png"
+  },
+  {
     "name": "Ingles",
     "category": "English",
-    "img": "./certificates/English.jpeg"
-},
-{
+    "img": "../data/certificates/English.jpeg"
+  },
+  {
     "name": "Comunicación y oratoria",
     "category": "Soft skills",
-    "img": "./certificates/Comunicacion-y-oratoria.jpeg"
-},
-{
+    "img": "../data/certificates/Comunicacion-y-oratoria.jpeg"
+  },
+  {
     "name": "Empatía y escucha activa",
     "category": "Soft skills",
-    "img": "./certificates/Empatia-y-escucha-activa.jpeg"
-},
-{
+    "img": "../data/certificates/Empatia-y-escucha-activa.jpeg"
+  },
+  {
     "name": "Gestión de tiempo",
     "category": "Soft skills",
-    "img": "./certificates/Gestion-de-tiempo.jpeg"
-}
+    "img": "../data/certificates/Gestion-de-tiempo.jpeg"
+  }
 ]
