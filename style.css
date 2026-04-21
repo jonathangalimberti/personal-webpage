@@ -2,8 +2,6 @@
     filter: invert(1)
 }
 
-
-
 #about-me:hover, #hero:hover, #projects:hover, #certifications:hover {
     animation-name: zoomIn;
     animation-duration: 1s;
