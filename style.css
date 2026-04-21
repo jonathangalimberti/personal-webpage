@@ -1,0 +1,37 @@
+.toggle-icon{
+    filter: invert(1)
+}
+
+
+
+#about-me:hover, #hero:hover, #projects:hover, #certifications:hover {
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-timing-function: normal;
+    animation-fill-mode: both;
+}
+#about-me:not(:hover), #hero:not(:hover), #projects:not(:hover), #certifications:not(:hover) {
+    animation-name: zoomOut;
+    animation-duration: 1s;
+    animation-timing-function: normal;
+    animation-fill-mode: both;
+}
+
+@keyframes zoomIn {
+    0%{
+        scale: 1;
+    }    
+    100%{
+        scale: 1.05;
+        resize: both;
+    }
+}
+@keyframes zoomOut {
+    0%{
+        scale: 1.05;
+    }    
+    100%{
+        scale: 1;
+        resize: both;
+    }
+}

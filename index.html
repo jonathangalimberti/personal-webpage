@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Personal Webpage</title>
+</head>
+
+<body class="bg-black">
+  <header>
+    <nav
+      class="container navbar navbar-expand-lg d-flex justify-content-between border rounded my-2 bg-black bg-gradient border-secondary">
+      <div class="container-fluid d-flex align-items-center justify-content-start gap-2">
+        <p class="fs-3 text-primary-emphasis fw-bolder m-0">JG</p>
+        <p class="text-white fw-bolder m-0">Frontend Developer</p>
+      </div>
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white">Dropdown</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-fluid d-flex justify-content-end align-items-center p-0">
+        <a class="navbar-brand text-white" href="https://github.com/jonathangalimberti/">
+          <img src="./img/gthub.png" alt="github" width="30" height="24"
+            class="d-inline-block align-text-top img-fluid m-0 toggle-icon" />
+        </a>
+        <a class="navbar-brand text-white" href="https://www.linkedin.com/in/jonathan-galimberti-developer">
+          <img src="./img/linkdin.png" alt="linkdin" width="30" height="24"
+            class="d-inline-block align-text-top img-fluid m-0" />
+        </a>
+        <a class="navbar-brand text-white border-start border-secondary" href="#" id="toggle-mode">
+          <img src="./img/moon.png" alt="Toggle-mode" width="30" height="24"
+            class="d-inline-block align-text-top img-fluid ms-3 toggle-icon" id="toggle-icon" />
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="hero" class="container p-0 border rounded my-2 bg-black bg-gradient border-secondary">
+      <div class="card mb-3 border-0 bg-black bg-gradient border border-secondary">
+        <div class="row m-0 align-items-center justify-content-around">
+          <div class="col col-md-6 m-0 d-flex flex-column">
+            <div class="mb-4 d-flex flex-row align-items-center">
+              <img src="./img/tags.png" class="img-fluid col-1" />
+              <p class="card-text text-secondary fs-5 ms-2">
+                Full stack Developer in Training
+              </p>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-around h-100">
+              <h5 class="card-title text-white fs-3">Hi, I'm Jonathan</h5>
+              <p class="card-text text-secondary fs-4">
+                I build web applications with clean code and pasion for solving problems
+              </p>
+              <div class="mt-3">
+                <a href="#" class="btn btn-primary me-2">My projects <img class="toggle-icon img-fluid ms-1" src="./img/arrow.png" alt="arrow" style="width: 25px;"></img></a>
+                <a href="#" class="btn btn-outline-light ">Download CV <img class="toggle-icon img-fluid ms-1 download-button" src="./img/download.png" alt="Download CV" style="width: 25px;"></img></a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-4 m-0 p-5">
+            <img src="./img/Jonathangalimberti.png" class="img-fluid rounded-circle p-5 " alt="..." />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about-me" class="container p-0 border rounded my-2 bg-black bg-gradient border-secondary py-4">
+      <div class="row justify-content-around text-secondary">
+        <div class="container col-5 d-flex flex-column text-white mx-4">
+          <h1>About me</h1>
+          <p class="text-secondary">I'am a programming student passionate about full stack development.</br>
+            I work with JavaScript, Node.js and React to build usefull and efficient web applications.</p>
+          <p class="text-secondary">I'm always learning, building projects, and looking for oportunities to grow as
+            developer.</p>
+        </div>
+        <div class="col-auto text-white p-0 d-flex flex-column align-items-start justify-content-center">
+          <h4>Technologies</h4>
+          <div class="d-flex flex-row">
+            <img src="./img/js html css.png" alt="javascript" class="img-fluid" style="max-height: 100px;">
+            <img src="./img/react.png" alt="React" srcset="" class="img-fluid" style="max-height: 100px;">
+            <img src="./img/node.png" alt="Node" srcset="" class="img-fluid" style="max-height: 100px;">
+            <!-- <img src="" alt="HTML" srcset="">
+              <img src="" alt="CSS" srcset=""> -->
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="projects" class="container p-0 border rounded my-2 bg-black bg-gradient border-secondary py-4">
+      <div class="container d-flex flex-row justify-content-between">
+        <h3 class="text-white">Projects </h3>
+        <a href="https://github.com/jonathangalimberti">View all on GitHub →</a>
+      </div>
+      <div class="container row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="certifications" class="container p-0 border rounded my-2 bg-black bg-gradient border-secondary py-4">
+      <div class="container">
+        <h3 class="text-white">Certificates</h3>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section id="contact" class="container p-0 border rounded my-2 bg-black bg-gradient border-secondary py-4">
+      <div class="container row justify-content-between">
+        <div class="container d-flex flex-column col">
+          <h3 class="text-white">Let's conect</h3>
+          <p class="text-secondary">I'am always open to new oportunities and exciting proyects.</p>
+        </div>
+        <div class="col-7 d-flex flex-row justify-content-end align-items-center px-0">
+          <a href="mailto:jonathangalimberti@hotmail.com" class="btn btn-primary"><img src="./img/mail.png" class="img-fluid me-2 toggle-icon" style="width: 30px;"/>jonathangalimberti@hotmail.com</a>
+          <a href="" class="btn btn-primary mx-3" ><img src="./img/linkdin.png" class="img-fluid me-2" style="width: 30px;"/>linkedIn</a>
+          <a href="" class="btn btn-primary "><img src="./img/gthub.png" class="img-fluid me-2 toggle-icon" style="width: 30px;"/>GitHub</a>
+        </div>
+
+
+      </div>
+    </section>
+  </footer>
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
