@@ -2,56 +2,56 @@
   {
     "name": "Desarrollo web",
     "category": "Development",
-    "img": "../data/certificates/Fundamentos-desarrollo-web.jpeg"
+    "img": "./src/data/certificates/Fundamentos-desarrollo-web.jpeg"
   },
   {
     "name": "Desarrollo web profesional",
     "category": "Development",
-    "img": "../data/certificates/Desarrollo-web-profesional.jpeg"
+    "img": "./src/data/certificates/Desarrollo-web-profesional.jpeg"
   },
   {
     "name": "React",
     "category": "Development",
-    "img": "../data/certificates/React.png"
+    "img": "./src/data/certificates/React.png"
   },
   {
     "name": "Node.js",
     "category": "Development",
-    "img": "../data/certificates/Node.png"
+    "img": "./src/data/certificates/Node.png"
   },
   {
     "name": "Bootstrap",
     "category": "Development",
-    "img": "../data/certificates/Bootstrap.png"
+    "img": "./src/data/certificates/Bootstrap.png"
   },
   {
     "name": "Git y Github",
     "category": "Development",
-    "img": "../data/certificates/Git-y-GitHub.png"
+    "img": "./src/data/certificates/Git-y-GitHub.png"
   },
   {
     "name": "API Rest",
     "category": "Development",
-    "img": "../data/certificates/API-Rest.png"
+    "img": "./src/data/certificates/API-Rest.png"
   },
   {
     "name": "Ingles",
     "category": "English",
-    "img": "../data/certificates/English.jpeg"
+    "img": "./src/data/certificates/English.jpeg"
   },
   {
     "name": "Comunicación y oratoria",
     "category": "Soft skills",
-    "img": "../data/certificates/Comunicacion-y-oratoria.jpeg"
+    "img": "./src/data/certificates/Comunicacion-y-oratoria.jpeg"
   },
   {
     "name": "Empatía y escucha activa",
     "category": "Soft skills",
-    "img": "../data/certificates/Empatia-y-escucha-activa.jpeg"
+    "img": "./src/data/certificates/Empatia-y-escucha-activa.jpeg"
   },
   {
     "name": "Gestión de tiempo",
     "category": "Soft skills",
-    "img": "../data/certificates/Gestion-de-tiempo.jpeg"
+    "img": "./src/data/certificates/Gestion-de-tiempo.jpeg"
   }
 ]
