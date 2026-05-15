@@ -15,23 +15,21 @@
     <nav
       class="container navbar navbar-expand-lg d-flex flex-row  flex-nowrap justify-content-between border rounded my-2 bg-black bg-gradient border-secondary sticky-top"
       id="navbar">
-      <div class="container-fluid d-flex col-6 col-md align-items-center justify-content-start gap-2">
-        <a href="#" class="fs-3 text-primary-emphasis fw-bolder m-0 link link-underline link-underline-opacity-0" onclick="goToHome()">JG</a>
-        <a href="#" class="text-white flex-grow-1 fw-bolder link link-underline link-underline-opacity-0 m-0" onclick="goToHome()">Frontend Developer</a>
+      <div class="container-fluid d-flex col-2 col-md-5 align-items-center justify-content-start gap-3">
+        <a href="#" class="fs-2 text-primary-emphasis fw-bolder m-0 link link-underline link-underline-opacity-0 text-break" onclick="goToHome()" id="initials">JG <span class="text-white fs-5">Frontend Developer</span></a>
       </div>
-      <div class="container-fluid col-md">
+      <div class="container-fluid col-md" id="sections">
         <div class="collapse navbar-collapse">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-pills btn-outline-light">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-pills btn-outline-light" id="ulNav" >
             <li class="nav-item">
-              <a class="nav-link text-white btn-outline-light" aria-current="page" href="#about-me">About me</a>
+              <a class="nav-link text-white btn-outline-light" aria-current="page" href="#hero" >About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#projects">Projects</a>
+              <a class="nav-link text-white" href="#projects" >Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#certifications">Certificates</a>
             </li>
-
           </ul>
         </div>
       </div>
@@ -58,7 +56,7 @@
       <section id="hero" class="container p-0 border rounded my-2 bg-black bg-gradient border-secondary">
         <div class="card mb-3 border-0 bg-black bg-gradient border border-secondary">
           <div class="row m-0 align-items-center justify-content-around">
-            <div class="col col-md-6 m-0 d-flex flex-column mt-2 mt-md-0">
+            <div class="col col-md-6 d-flex flex-column mt-4 mt-lg-0">
               <div class="mb-4 d-flex flex-row align-items-center">
                 <img src="./public/img/tags.png" class="img-fluid col-1" />
                 <p class="card-text text-secondary fs-5 ms-2">
@@ -73,14 +71,14 @@
                 <div class="mt-3 d-flex flex-column flex-md-row gap-2">
                   <a href="#projects" class="btn btn-primary">My projects <img class="toggle-icon img-fluid ms-1"
                       src="./public/img/arrow.png" alt="arrow" style="width: 25px;"></img></a>
-                  <a href="./src/data/CV/CV Jonathan Galimberti Frontend Developer jr.pdf" class="btn btn-outline-light"
-                    download="CV Jonathan Galimberti Frontend developer">Download CV <img
-                      class="toggle-icon img-fluid ms-1 download-button" src="./public/img/download.png"
-                      alt="Download CV" style="width: 25px;"></img></a>
+                  <button class="btn btn-outline-light"
+                    onclick="downloadCv('./src/data/CV/CV Jonathan Galimberti Frontend Developer jr.pdf','Jonathan Galimberti Frontend Developer jr.pdf')">Download
+                    CV <img class="toggle-icon img-fluid ms-1 " src="./public/img/download.png" alt="Download CV"
+                      style="width: 25px;"></img></button>
                 </div>
               </div>
             </div>
-            <div class="col col-md-4 m-0 p-md-4">
+            <div class="col col-md-4 m-0 p-0 p-lg-4">
               <img src="./public/img/Jonathangalimberti.png" class="img-fluid rounded-circle p-0 profile-img"
                 alt="profile image" />
             </div>
@@ -105,7 +103,6 @@
             </div>
           </div>
         </div>
-
       </section>
       <section id="projects" class="container p-0 border rounded my-2 bg-black bg-gradient border-secondary py-4">
         <div class="container d-flex flex-row justify-content-between">
@@ -182,19 +179,24 @@
     </section>
     <section id="certificatesSection" class="container bg-black bg-gradient border-secondary rounded border d-none">
       <div class="container d-flex flex-column align-items-center py-3 position-relative">
-        <a class="align-self-start fw-bold display-2 link-underline link-underline-opacity-0 position-absolute top-0 start-0 pointer"
+        <a class="align-self-start fw-bold display-4 link-underline link-underline-opacity-0 position-absolute top-0 start-0 pointer"
           href="#navbar" onclick="toggleSection()">←</a>
         <div id="search" class="mx-2">
-          <input type="search" name="" value="" id="search-input" placeholder="Search certificate"
+          <input type="search" name="search" value="" id="search-input" placeholder="Search certificate"
             onkeyup="searchCertificate(value)" class="border rounded px-3 py-1" />
         </div>
         <div id="filters" class="container d-flex align-items-center justify-content-center mt-2 text-white">
-          <input type="radio" checked value="All" name="filters" id="" class="px-2 mx-2" onclick="filter(value)" />All
-          <input type="radio" value="Development" name="filters" id="" class="px-2 mx-2"
-            onclick="filter(value)" />Development
-          <input type="radio" value="English" name="filters" id="" class="px-2 mx-2" onclick="filter(value)" />English
-          <input type="radio" value="Soft skills" name="filters" id="" class="px-2 mx-2" onclick="filter(value)" />
-          Soft skills
+          <input type="radio" checked value="All" name="filters" id="All" class="px-2 mx-2" onclick="filter(value)" />
+          <label for="All">All</label>
+          <input type="radio" value="Development" name="filters" id="Development" class="px-2 mx-2"
+            onclick="filter(value)" />
+          <label for="Development">Development</label>
+          <input type="radio" value="English" name="filters" id="English" class="px-2 mx-2" onclick="filter(value)" />
+          <label for="English">English</label>
+          <input type="radio" value="Soft skills" name="filters" id="Soft-skills" class="px-2 mx-2"
+            onclick="filter(value)" />
+          <label for="Soft-skills">Soft skills</label>
+
         </div>
       </div>
       <div id="container"
